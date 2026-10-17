@@ -1,6 +1,6 @@
 # omnischolar/orcid
 
-ORCID's public API for [glitchr/omnischolar](https://github.com/glitchr-studio/omnischolar): who
+ORCID's public API for [omniscient/omnischolar](https://github.com/glitchr-studio/omnischolar): who
 a researcher says they are - names, biography, keywords, pages - their CV - employments,
 education, qualifications, invited positions, distinctions, memberships, services - and the works
 on their record, each in the version they prefer, with its contributors. No key.
