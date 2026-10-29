@@ -136,4 +136,15 @@ final class OrcidSourceTest extends TestCase
     {
         self::assertNull(\Omnischolar\Model\Identifier::tryOf(Scheme::ORCID, '0000-0002-1825-0098'));
     }
+
+    /** The throttle every factory takes (SourceFactory): seconds left between two calls. */
+    public function testTheThrottleLeavesItsSeconds(): void
+    {
+        $http = new MockHttpClient(static fn (): MockResponse => new MockResponse((string) file_get_contents(__DIR__.'/Fixtures/record-carberry.json')));
+        $source = (new OrcidSourceFactory($http))->create(['throttle' => 0.3]);
+        $start = microtime(true);
+        $source->author('https://orcid.org/'.self::CARBERRY);
+        $source->author('https://orcid.org/'.self::CARBERRY);
+        self::assertGreaterThanOrEqual(0.29, microtime(true) - $start);
+    }
 }

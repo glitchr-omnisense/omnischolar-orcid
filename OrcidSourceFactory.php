@@ -12,6 +12,7 @@ use Symfony\Component\HttpClient\HttpClient;
  *
  *   options:
  *     base_uri: 'https://pub.orcid.org/v3.0/'   # the sandbox: https://pub.sandbox.orcid.org/v3.0/
+ *     throttle: 0                           # seconds between two calls
  */
 final class OrcidSourceFactory extends SourceFactory
 {
@@ -30,6 +31,7 @@ final class OrcidSourceFactory extends SourceFactory
             $this->http ?? HttpClient::create(),
             (string) $c->get('base_uri', OrcidSource::BASE_URI),
             ['User-Agent' => self::userAgent($c)],
+            (float) $c->get('throttle', 0.0),
         );
     }
 }

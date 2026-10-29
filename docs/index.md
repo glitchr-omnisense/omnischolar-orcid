@@ -36,12 +36,9 @@ None: the public API serves what researchers made public, without a client. Call
 | Option | Type | Default | Required | |
 |---|---|---|---|---|
 | `base_uri` | string | `https://pub.orcid.org/v3.0/` | no | the sandbox: `https://pub.sandbox.orcid.org/v3.0/` |
+| `throttle` | float | `0.0` | no | seconds left between two calls of the source |
 | `mailto` | string | `null` | no | added to the `User-Agent` |
 | `user_agent` | string | `omnischolar/1.x (+https://github.com/glitchr-omnisense/omnischolar)` | no | |
-
-> [!WARNING]
-> Known defect: `throttle` is not read by this factory (the source has no interval), where every
-> factory is said to take it.
 
 ## Capabilities
 
