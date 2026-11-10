@@ -1,0 +1,577 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 7
+			path: OrcidSource.php
+
+		-
+			message: '#^Binary operation "\+" between mixed and array\{_date\: string\} results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Binary operation "\." between mixed and '' '' results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Binary operation "\." between non\-falsy\-string and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''address'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''addresses'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''affiliation\-group'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''biography'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''city'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''content'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''contributor'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''contributor\-attributes'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''contributor\-orcid'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''contributor\-role'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''country'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''credit\-name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''department\-name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''disambiguated\-organization'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''disambiguated\-organization\-identifier'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''disambiguation\-source'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''distinctions''\|''educations''\|''employments''\|''invited\-positions''\|''memberships''\|''qualifications''\|''services'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''end\-date'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''external\-id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''external\-id\-normalized'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''external\-id\-relationship'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''external\-id\-type'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''external\-id\-value'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''external\-identifier'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''external\-identifiers'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''family\-name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''given\-names'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''keyword'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''keywords'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''organization'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''other\-name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''other\-names'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''path'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''publication\-date'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''put\-code'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''researcher\-url'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''researcher\-urls'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''role\-title'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''start\-date'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''subtitle'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''summaries'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''title'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''type'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''url'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''value'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 14
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''work'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''work\-summary'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset ''year'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot access offset 0 on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 10
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#1 \$array of function reset expects array\|object, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#1 \$callback of function array_map expects \(callable\(mixed\)\: mixed\)\|null, Closure\(array\)\: mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#1 \$callback of function array_map expects \(callable\(mixed\)\: mixed\)\|null, Closure\(array\)\: string given\.$#'
+			identifier: argument.type
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#1 \$date of static method Omnischolar\\Orcid\\OrcidSource\:\:orcidDate\(\) expects array\{year\?\: array\{value\: string\}\|null, month\?\: array\{value\: string\}\|null, day\?\: array\{value\: string\}\|null\}\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 4
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#1 \$name of static method Omnischolar\\Model\\WorkType\:\:fromName\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#1 \$text of static method Omnischolar\\Source\\HttpSource\:\:text\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 4
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#1 \$w of method Omnischolar\\Orcid\\OrcidSource\:\:toWork\(\) expects array\<string, mixed\>, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#1 \$w of method Omnischolar\\Orcid\\OrcidSource\:\:toWork\(\) expects array\<string, mixed\>, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#2 \$array of function array_map expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 4
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \#2 \$value of static method Omnischolar\\Model\\Identifier\:\:tryOf\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 9
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$city of class Omnischolar\\Model\\Affiliation constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$country of class Omnischolar\\Model\\Affiliation constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$country of class Omnischolar\\Model\\Author constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$department of class Omnischolar\\Model\\Affiliation constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$family of class Omnischolar\\Model\\Author constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$given of class Omnischolar\\Model\\Author constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$language of class Omnischolar\\Model\\Work constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$name of class Omnischolar\\Model\\Author constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$role of class Omnischolar\\Model\\Affiliation constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$ror of class Omnischolar\\Model\\Affiliation constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$url of class Omnischolar\\Model\\Affiliation constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$url of class Omnischolar\\Model\\Work constructor expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Parameter \$urls of class Omnischolar\\Model\\Author constructor expects list\<string\>, list\<mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OrcidSource.php
+
+		-
+			message: '#^Cannot cast mixed to float\.$#'
+			identifier: cast.double
+			count: 1
+			path: OrcidSourceFactory.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 1
+			path: OrcidSourceFactory.php
+
+		-
+			message: '#^Cannot access property \$affiliations on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$alternativeNames on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$biography on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$family on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$given on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$keywords on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$name on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$name on Omnischolar\\Model\\Venue\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$source on Omnischolar\\Model\\Work\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$title on Omnischolar\\Model\\Work\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot access property \$urls on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot call method affiliations\(\) on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Cannot call method orcid\(\) on Omnischolar\\Model\\Author\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Parameter \#2 \$string of static method PHPUnit\\Framework\\Assert\:\:assertStringStartsWith\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/OrcidSourceTest.php
+
+		-
+			message: '#^Property Omnischolar\\Orcid\\Tests\\OrcidSourceTest\:\:\$calls \(list\<array\{string, array\<string, list\<string\>\>\}\>\) does not accept non\-empty\-list\<array\{string, mixed\}\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: Tests/OrcidSourceTest.php

@@ -1,0 +1,53 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "orcid",
+    "rateLimits": [
+        {
+            "max": 12,
+            "window": "second",
+            "scope": "application",
+            "operations": [],
+            "note": "Anonymous and registered Public API: 12 requests a second, burst 40 (requests queued beyond the rate, rejected with a 503 past the burst). Member API: 24 a second."
+        },
+        {
+            "max": 25000,
+            "window": "day",
+            "scope": "client-ip",
+            "operations": [],
+            "note": "Anonymous API: 25k reads a day per IP address; registered Public API: 100k a day per Client ID; Member API: no quota. Past the quota, 503 for the rest of the period."
+        }
+    ],
+    "concurrency": null,
+    "rights": {
+        "commercial": "contract",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "unknown",
+            "maxTtl": null
+        },
+        "storage": "unknown",
+        "redistribution": "unknown",
+        "attribution": {
+            "required": false,
+            "text": null,
+            "url": null,
+            "where": []
+        },
+        "licence": null
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://info.orcid.org/public-client-terms-of-service/",
+        "policy": "https://info.orcid.org/ufaqs/what-are-the-api-limits/",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": "https://orcid.org/help/contact-us",
+        "notes": "Read on 2026-11-10: the API limits FAQ and the Public APIs Terms of Service: 'a limited royalty-free license to make non-commercial use of the Public APIs'; no re-use fees, no use 'in connection with any revenue-generating product or service' (commercial use goes through the paid Member API: contract); no continuous polling of the Registry; posted limits and quotas must not be exceeded; ORCID's name not to suggest endorsement. No licence for the record data is stated on those pages (only the website text is CC0); caching and storage not addressed. This package calls pub.orcid.org anonymously (no token)."
+    }
+}

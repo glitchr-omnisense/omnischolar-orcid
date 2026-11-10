@@ -20,6 +20,17 @@ omnischolar:
 
 See [docs/](docs/index.md).
 
+## Usage policy
+
+Declared as data in [`policy.json`](policy.json) (read at https://info.orcid.org/ufaqs/what-are-the-api-limits/ on 2026-11-10), and honoured on every request by the
+core: a limit reached waits when its window ends within `max_wait` seconds, else the request is not
+sent ([Usage policies](https://github.com/glitchr-omnisense/omnischolar/blob/1.x/docs/policies.md)).
+
+- Limits: 12 a second; 25,000 a day per client-ip.
+- Licence: not stated; commercial use: contract.
+- Credit: not required.
+- Needs: nothing.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or
