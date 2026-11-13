@@ -17,8 +17,8 @@ use Symfony\Component\HttpClient\Response\MockResponse;
  * Fixtures recorded from pub.orcid.org/v3.0 on 2026-10-04: the record and
  * works of Josiah Carberry (0000-0002-1825-0097, ORCID's own demonstration
  * record), the bulk details of its works in two pages of four, one work
- * (work/19980729); and Keitaro Nakatani's record (0009-0005-1387-7295),
- * public but empty.
+ * (work/19980729); and record-empty.json, an invented record (Jeanne Exemple,
+ * 0009-0000-0000-0017) in the shape of a real one, public but empty.
  */
 final class OrcidSourceTest extends TestCase
 {
@@ -38,8 +38,8 @@ final class OrcidSourceTest extends TestCase
                 '/v3.0/'.self::CARBERRY.'/works/9543020,4562455,4562454,4562453' => 'bulk-page1.json',
                 '/v3.0/'.self::CARBERRY.'/works/4562456,19980729' => 'bulk-page2.json',
                 '/v3.0/'.self::CARBERRY.'/work/19980729' => 'work.json',
-                '/v3.0/0009-0005-1387-7295/record' => 'record-nakatani.json',
-                '/v3.0/0009-0005-1387-7295/works' => 'works-nakatani.json',
+                '/v3.0/0009-0000-0000-0017/record' => 'record-empty.json',
+                '/v3.0/0009-0000-0000-0017/works' => 'works-empty.json',
                 default => null,
             };
 
@@ -113,11 +113,11 @@ final class OrcidSourceTest extends TestCase
     public function testARecordWithNothingPublic(): void
     {
         $source = $this->source();
-        $author = $source->author('0009-0005-1387-7295');
+        $author = $source->author('0009-0000-0000-0017');
 
-        self::assertSame('Keitaro NAKATANI', $author->name);
+        self::assertSame('Jeanne EXEMPLE', $author->name);
         self::assertSame([], $author->affiliations);
-        self::assertSame(0, $source->works('0009-0005-1387-7295')->total);
+        self::assertSame(0, $source->works('0009-0000-0000-0017')->total);
         self::assertNull($source->author('0000-0001-5000-0007'), 'unknown');
     }
 
@@ -129,7 +129,7 @@ final class OrcidSourceTest extends TestCase
         } catch (NotSupportedException) {
         }
         $this->expectException(NotSupportedException::class);
-        $this->source()->author('A5108007452');
+        $this->source()->author('A5046427077');
     }
 
     public function testTheOrcidChecksum(): void

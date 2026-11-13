@@ -128,7 +128,7 @@ omnischolar:
 
 Tested offline: `Tests/OrcidSourceTest.php` (7 tests), on `MockHttpClient` with answers recorded on
 2026-10-04 - Josiah Carberry (0000-0002-1825-0097, ORCID's demonstration record): record, works,
-their details in two pages, one work; Keitaro Nakatani's record, public but empty. Called live on
+their details in two pages, one work; an invented record in the same shape, public but empty. Called live on
 2026-10-04 and on 2026-10-26 (the example above). The sandbox was not called.
 
 Limits of the service: only what the researcher made public; no search of works; many works have
